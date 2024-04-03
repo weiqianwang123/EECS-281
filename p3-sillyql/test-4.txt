@@ -1,0 +1,16 @@
+CREATE sexy 3 string double bool name age gender
+GENERATE FOR sexy bst INDEX ON gender
+INSERT INTO sexy 8 ROWS
+a 10 false
+b 10.2 true
+c 23 false
+d 39 false
+e 90 true
+f 89 false
+g 78 true
+h 99.99 false
+PRINT FROM sexy 3 name  gender age WHERE gender > true
+PRINT FROM sexy 3 name  gender age WHERE gender < true
+PRINT FROM sexy 3 name  gender age WHERE gender = true
+PRINT FROM sexy 3 name  gender age WHERE add = true
+QUIT

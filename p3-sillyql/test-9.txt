@@ -1,0 +1,18 @@
+CREATE BOOL 1 bool gender
+INSERT INTO BOOL 7 ROWS
+true
+false
+false
+true
+true
+false
+false
+GENERATE FOR BOOL hash INDEX ON gender
+PRINT FROM BOOL 0 WHERE gender > true
+GENERATE FOR BOOL bst INDEX ON gender
+PRINT FROM BOOL 1 gender ALL
+DELETE FROM BOOL WHERE gender = true
+DELETE FROM BOOL WHERE gender = false
+PRINT FROM BOOL 1 gender ALL
+REMOVE BOOL
+QUIT

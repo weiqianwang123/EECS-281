@@ -1,0 +1,34 @@
+CREATE 281class 4 string string bool double  emotion person Y/N age
+INSERT INTO 281class 11 ROWS
+happy Darden true 97.23
+stressed students false 23.34
+busy office_hours true 12.48
+stressed students true 56.23
+stressed Paoletti true 90.321
+happy Darden true 7347.23
+happy Sith true 123.39
+victorious Sith true  1.34
+sad Sith true 12
+bad Sith true  9
+not Sith true  90
+DELETE FROM 281class WHERE age > 5000
+DELETE FROM 281class WHERE age > 5000
+DELETE FROM 281class WHERE age < 1
+DELETE FROM 281class WHERE age = 1.34
+PRINT FROM 281class 2 person emotion WHERE age > 10
+GENERATE FOR 281class hash INDEX ON age
+PRINT FROM 281class 2 person emotion WHERE age > 10
+PRINT FROM 281class 2 person emotion WHERE age = 10
+GENERATE FOR 281class bst INDEX ON age
+PRINT FROM 281class 2 person emotion WHERE age > 100
+CREATE AC 2 double string age name
+GENERATE FOR AC hash INDEX ON age
+INSERT INTO AC 3 ROWS
+12 aside
+9 BSD
+90 ADFG
+PRINT FROM AC 1 name WHERE age > 1
+JOIN AC AND 281class WHERE age = age AND PRINT 2 name 1 emotion 2
+REMOVE 281class
+JOIN AC AND 281class WHERE age = age AND PRINT 2 name 1 emotion 2
+QUIT
